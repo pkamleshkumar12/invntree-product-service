@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import lombok.*;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
+import java.util.UUID;
 
 @Entity
 @Table(name = "products")
@@ -14,6 +15,7 @@ import java.time.LocalDateTime;
 public class Product {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.UUID)
     @Column(name = "product_id")
     private String productId;
 

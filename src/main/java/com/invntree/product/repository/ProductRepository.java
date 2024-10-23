@@ -3,6 +3,7 @@ package com.invntree.product.repository;
 import com.invntree.product.model.Product;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
+import java.lang.String;
 
 import java.util.List;
 import java.util.Optional;
